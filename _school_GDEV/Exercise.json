@@ -540,6 +540,15 @@
         "name": "GirlSprite\\Slide (5).png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -592,6 +601,73 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 198,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "3ca5b33a-b7e0-471f-9703-ce4f9f3666c7",
+          "width": 1280,
+          "x": -1,
+          "y": 520,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "e2c4d071-5dbf-4a53-aff4-1cbbdfa9ba66",
+          "width": 213,
+          "x": 1012,
+          "y": 290,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite2",
+          "persistentUuid": "e929a197-b2eb-4a88-9272-e93b2c37deef",
+          "width": 0,
+          "x": 675,
+          "y": 337,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite2",
+          "persistentUuid": "bdb4f912-c14f-48b2-a40e-c1c5407ce5c0",
+          "width": 394,
+          "x": 747,
+          "y": 469,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -603,7 +679,28 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": true,
+              "canGrabPlatforms": true,
+              "canGrabWithoutMoving": true,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": false,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 500,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
               "name": "Idle",
@@ -2598,6 +2695,144 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 29
+                          },
+                          {
+                            "x": 64,
+                            "y": 29
+                          },
+                          {
+                            "x": 64,
+                            "y": 38
+                          },
+                          {
+                            "x": 0,
+                            "y": 38
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 29
+                          },
+                          {
+                            "x": 64,
+                            "y": 29
+                          },
+                          {
+                            "x": 64,
+                            "y": 38
+                          },
+                          {
+                            "x": 0,
+                            "y": 38
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2605,10 +2840,168 @@
         "children": [
           {
             "objectName": "Girl"
+          },
+          {
+            "objectName": "NewSprite"
+          },
+          {
+            "objectName": "NewSprite2"
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsJumping"
+              },
+              "parameters": [
+                "Girl",
+                "PlatformerObject"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Girl",
+                "Animation",
+                "=",
+                "\"Jump\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "Girl",
+                "PlatformerObject"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                  },
+                  "parameters": [
+                    "Girl",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Girl",
+                    "Animation",
+                    "=",
+                    "\"Run\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                  },
+                  "parameters": [
+                    "Girl",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Girl",
+                    "Animation",
+                    "=",
+                    "\"Idle\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Girl",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Girl",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -2671,6 +3064,14 @@
         {
           "name": "Opacity",
           "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
         {
           "name": "Resizable",
