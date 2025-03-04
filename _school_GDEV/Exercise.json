@@ -4511,6 +4511,7 @@
           "comment": ""
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4553,6 +4554,138 @@
               },
               "parameters": [
                 "CoinGroup",
+                "Tween",
+                "\"Moveup\"",
+                "0",
+                "\"linear\"",
+                "0.7",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "CreateByName"
+              },
+              "parameters": [
+                "",
+                "CoinGroup",
+                "\"Coin\"+ToString(RandomInRange(1,2))",
+                "Girl.X()+RandomInRange(-200,200)",
+                "Girl.Y()+RandomInRange(-100,-200)",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Coin1",
+                "Girl",
+                "",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Coin1",
+                "Tween",
+                "\"Disapear\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Coin1",
+                "Tween",
+                "\"Moveup\"",
+                "0",
+                "\"linear\"",
+                "0.7",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "CreateByName"
+              },
+              "parameters": [
+                "",
+                "CoinGroup",
+                "\"Coin\"+ToString(RandomInRange(1,2))",
+                "Girl.X()+RandomInRange(-200,200)",
+                "Girl.Y()+RandomInRange(-100,-200)",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Coin2",
+                "Girl",
+                "",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Coin2",
+                "Tween",
+                "\"Disapear\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Coin2",
                 "Tween",
                 "\"Moveup\"",
                 "0",
@@ -4986,28 +5119,11 @@
           "height": 64,
           "keepRatio": true,
           "layer": "",
-          "name": "Coin2",
-          "persistentUuid": "a097c3ae-c860-4513-9030-411dc3678bfc",
-          "width": 64,
-          "x": 158,
-          "y": 609,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
           "name": "Coin1",
           "persistentUuid": "ac2b0cbc-43b8-4654-9d38-be9c400e531b",
           "width": 64,
-          "x": 236,
-          "y": 611,
+          "x": 545,
+          "y": 542,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -5148,6 +5264,108 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin1",
+          "persistentUuid": "91050fd0-272c-4810-a7b7-1f9d70ff8318",
+          "width": 64,
+          "x": 236,
+          "y": 611,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin1",
+          "persistentUuid": "786ac7ea-a35e-471e-bd30-160a76924a68",
+          "width": 64,
+          "x": 157,
+          "y": 615,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin1",
+          "persistentUuid": "1e641b9b-92dc-49fa-90bc-669f0b2235b3",
+          "width": 64,
+          "x": 234,
+          "y": 545,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin1",
+          "persistentUuid": "d4cc02e1-e9a9-432e-b07c-c4f32e497442",
+          "width": 64,
+          "x": 318,
+          "y": 543,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin1",
+          "persistentUuid": "5036c22b-fb17-45f0-8f8b-4c4e9b210e0a",
+          "width": 64,
+          "x": 393,
+          "y": 543,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coin1",
+          "persistentUuid": "74d78855-3fd3-498f-9306-21e6bc365db5",
+          "width": 64,
+          "x": 464,
+          "y": 542,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -5160,7 +5378,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4633111824513978,
+        "zoomFactor": 0.8141881203709914,
         "windowMask": false
       }
     }
