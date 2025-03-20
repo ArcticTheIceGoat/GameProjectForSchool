@@ -1,0 +1,10 @@
+[
+{"0_Name":"Strike",
+"1_Type":"atk",
+"2_Act":[
+    {"ActName":"damage","Values":[5,10]}
+    ]
+},
+
+{"0_Name":"Defend","1_Type":"def","2_Act":[{"ActName":"defend","Values":[4,8]}]}
+]
