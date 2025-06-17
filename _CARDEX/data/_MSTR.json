@@ -1,0 +1,150 @@
+[
+  {
+    "id": "goblin",
+    "name": "goblin",
+    "hp": 35,
+    "armor": 0,
+    "actcounts":5,
+    "acts": [
+        { "ActName":"defend","Values":[8,4]},
+        {"ActName":"damage","Values":[6,8]},
+      { "ActName":"rest","Values":[4]},
+      {"ActName":"damage","Values":[6,8]},
+      {"ActName":"poison","Values":[3]}
+    ]
+  },
+  {
+    "id": "goblin2",
+    "name": "goblin2",
+    "hp": 45,
+    "armor": 0,
+    "actcounts":5,
+    "acts": [
+        { "ActName":"defend","Values":[4,4]},
+        {"ActName":"damage","Values":[6,8]},
+      { "ActName":"armor","Values":[5]},
+      {"ActName":"damage","Values":[6,8]},
+      {"ActName":"damage","Values":[6,12]}
+
+    ]
+  },    
+  {
+    "id": "ghost",
+    "name": "ghost",
+    "hp": 25,
+    "armor": 0,
+    "actcounts":4,
+    "acts": [
+      { "ActName":"armor","Values":[4]},
+        { "ActName":"weaken","Values":[2]},
+        {"ActName":"damage","Values":[6,8]},
+      { "ActName":"defend","Values":[4,6]}
+    ]
+  },
+  {
+    "id": "Knight",
+    "name": "Knight",
+    "hp": 60,
+    "armor": 0,
+    "actcounts":3,
+    "acts": [
+        { "ActName":"defend","Values":[12,10]},
+        {"ActName":"damage","Values":[8,10]},
+      { "ActName":"armor","Values":[8]}
+    ]
+  },
+  {
+    "id": "Hunter",
+    "name": "Hunter",
+    "hp": 75,
+    "armor": 0,
+    "actcounts":5,
+    "acts": [
+        {"ActName":"damage","Values":[12,8]},
+      { "ActName":"defend","Values":[15,15]},
+      {"ActName":"strengh","Values":[3]},
+      { "ActName":"damage","Values":[12,10]},
+      { "ActName":"poison","Values":[6]}
+    ]
+  },
+  {
+    "id": "Meatball",
+    "name": "Meatball",
+    "hp": 100,
+    "armor": 0,
+    "actcounts":4,
+    "acts": [
+        {"ActName":"damage","Values":[12,10]},
+      { "ActName":"heal","Values":[10]},
+      {"ActName":"damage","Values":[8,10]},
+      { "ActName":"heal","Values":[15]}
+    ]
+  },
+  {
+    "id": "Demon",
+    "name": "Demon",
+    "hp": 140,
+    "armor": 0,
+    "actcounts":5,
+    "acts": [
+        {"ActName":"damage","Values":[12,8]},
+        { "ActName":"strengh","Values":[10]},
+        {"ActName":"damage","Values":[12,8]},
+        {"ActName":"damage","Values":[14,10]},
+        {"ActName":"damage","Values":[18,12]}
+    ]
+  },
+  {
+    "id": "WarWolf",
+    "name": "WarWolf",
+    "hp": 125,
+    "armor": 0,
+    "actcounts":6,
+    "acts": [
+        {"ActName":"damage","Values":[12,8]},
+        { "ActName":"weaken","Values":[5]},
+        { "ActName":"strengh","Values":[5]},
+        {"ActName":"damage","Values":[12,8]},
+        {"ActName":"damage","Values":[12,15]},
+        {"ActName":"burn","Values":[5]}
+    ]
+  },
+  {
+    "id": "hugeMeatBall",
+    "name": "hugeMeatBall",
+    "hp": 250,
+    "armor": 0,
+    "actcounts":6,
+    "acts": [
+        {"ActName":"damage","Values":[15,8]},
+        { "ActName":"defend","Values":[22,25]},
+        { "ActName":"defend","Values":[20,20]},
+        { "ActName":"defend","Values":[10,15]},
+        { "ActName":"heal","Values":[100]},
+        {"ActName":"poison","Values":[8]}
+    ]
+  },
+  {
+    "id": "voidLord",
+    "name": "voidLord",
+    "hp": 400,
+    "armor": 0,
+    "actcounts":13,
+    "acts": [
+        {"ActName":"heal","Values":[300]},
+        { "ActName":"defend","Values":[12,28]},
+        { "ActName":"armor","Values":[15]},
+        { "ActName":"damage","Values":[20,40]},
+        { "ActName":"defend","Values":[20,20]},
+        { "ActName":"weaken","Values":[5]},
+        { "ActName":"strengh","Values":[6]},
+        { "ActName":"heal","Values":[100]},
+        { "ActName":"damage","Values":[30,60]},
+        { "ActName":"armor","Values":[15]},
+        { "ActName":"defend","Values":[10,30]},
+        { "ActName":"damage","Values":[60,60]},
+        { "ActName":"burn","Values":[18]}
+    ]
+  }
+
+]

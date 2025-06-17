@@ -1,0 +1,199 @@
+[
+    {"0_Name":"Strike",
+    "1_Type":"atk",
+    "2_Act":[
+        {"ActName":"damage","Values":[4,4]}
+        ],
+        "3_Count":1,
+        "4_VisName":"打擊",
+        "5_Discrip":"痛擊目標 (4~8)"
+    },
+    
+    {"0_Name":"Defend"
+    ,"1_Type":"def",
+    "2_Act":[
+        {"ActName":"defend","Values":[4,3]}
+        ],
+    "3_Count":1,
+    "4_VisName":"防禦",
+    "5_Discrip":"防禦敵方攻擊 (4~7)"
+    },
+    {"0_Name":"ArmorUp"
+    ,"1_Type":"ski",
+    "2_Act":[
+        {"ActName":"armor","Values":[3]}
+        ],
+    "3_Count":1,
+    "4_VisName":"裝甲",
+    "5_Discrip":"獲得持續減傷 每回合會衰減1"
+    },
+    {"0_Name":"HeavyStrike",
+    "1_Type":"burnt",
+    "2_Act":[
+        {"ActName":"damage","Values":[2,8]},
+        {"ActName":"damage","Values":[4,6]}
+        ],
+        "3_Count":2,
+        "4_VisName":"重擊",
+        "5_Discrip":"痛擊目標 但更大力(6~20) 只能用一次"
+    },
+    {"0_Name":"HeavyDefend",
+    "1_Type":"burnt",
+    "2_Act":[
+        {"ActName":"defend","Values":[4,4]},
+        {"ActName":"defend","Values":[4,8]}
+        ],
+        "3_Count":2,
+        "4_VisName":"重型防禦",
+        "5_Discrip":"防禦 較厚實(8~20) 只能用一次"
+    },
+    {"0_Name":"Swifty",
+    "1_Type":"burnt",
+    "2_Act":[
+        {"ActName":"swift","Values":[1]}
+        ],
+        "3_Count":1,
+        "4_VisName":"敏捷",
+        "5_Discrip":"在這場戰鬥內 持續增加一格出牌數 只能用一次"
+    },
+    {"0_Name":"ArmorStack",
+    "1_Type":"burnt",
+    "2_Act":[
+        {"ActName":"armor","Values":[15]}
+        ],
+        "3_Count":1,
+        "4_VisName":"上護甲",
+        "5_Discrip":"一次獲得大量持續減傷層數 只能用一次"
+    },
+    {"0_Name":"AccurateStrike",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"damage","Values":[5,5]},
+        {"ActName":"damage","Values":[5,10]}
+        ],
+        "3_Count":2,
+        "4_VisName":"精確重擊",
+        "5_Discrip":"痛擊目標 更大力(10~25) 且能重複使用"
+    },
+    {"0_Name":"AccurateDefend",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"defend","Values":[5,5]},
+        {"ActName":"defend","Values":[5,7]}
+        ],
+        "3_Count":2,
+        "4_VisName":"精確防禦",
+        "5_Discrip":"更精準 能重複使用的防禦 (10~22)"
+    },
+    {"0_Name":"Burn",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"burn","Values":[4]}
+        ],
+        "3_Count":1,
+        "4_VisName":"燃燒",
+        "5_Discrip":"點燃敵方 會高速衰減 每回合每層燃燒 造成兩倍傷害"
+    },
+    {"0_Name":"Poison",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"poison","Values":[3]}
+        ],
+        "3_Count":1,
+        "4_VisName":"下毒",
+        "5_Discrip":"使敵方中毒 緩慢衰減 每回合造成相等層數傷害"
+    },
+    {"0_Name":"Chance",
+    "1_Type":"burnt",
+    "2_Act":[
+        {"ActName":"chance","Values":[1]}
+        ],
+        "3_Count":1,
+        "4_VisName":"機會",
+        "5_Discrip":"增加抽牌數量1"
+    },
+    {"0_Name":"Strengh",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"strengh","Values":[2]}
+        ],
+        "3_Count":1,
+        "4_VisName":"強化",
+        "5_Discrip":"強化傷害為1.5倍"
+    },
+    {"0_Name":"Weaken",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"weaken","Values":[2]}
+        ],
+        "3_Count":1,
+        "4_VisName":"虛弱化",
+        "5_Discrip":"虛弱敵人傷害至一半"
+    },
+    {"0_Name":"Null",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"null","Values":[1]}
+        ],
+        "3_Count":1,
+        "4_VisName":"虛無",
+        "5_Discrip":"除外當前後方其餘卡牌"
+    },
+    {"0_Name":"AetherMind",
+    "1_Type":"burnt",
+    "2_Act":[
+        {"ActName":"chance","Values":[4]},
+        {"ActName":"swift","Values":[2]}
+        ],
+        "3_Count":2,
+        "4_VisName":"乙太之識",
+        "5_Discrip":"於本次戰鬥 增加兩個出牌量 以及四個抽牌量"
+    },
+    {"0_Name":"Ethernalfire",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"burn","Values":[12]}
+        ],
+        "3_Count":1,
+        "4_VisName":"永燃之火",
+        "5_Discrip":"疊加大量燃燒層數"
+    },
+    {"0_Name":"Cycle",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"rev","Values":[1]}
+        ],
+        "3_Count":1,
+        "4_VisName":"循環回收",
+        "5_Discrip":"回收被除外的牌"
+    },
+    {"0_Name":"Poisonblast",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"poisonblast","Values":[1]}
+        ],
+        "3_Count":1,
+        "4_VisName":"毒爆",
+        "5_Discrip":"清空敵人毒層數 引爆毒素造成大量傷害"
+    },
+    {"0_Name":"Grilledpoison",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"grilledpoison","Values":[1]}
+        ],
+        "3_Count":1,
+        "4_VisName":"粹火猛毒",
+        "5_Discrip":"將燃燒層數轉化 變成兩倍毒素層數 會清空敵人燃燒層數"
+    },
+    {"0_Name":"M3",
+    "1_Type":"def",
+    "2_Act":[
+        {"ActName":"damage","Values":[20,20]},
+        {"ActName":"heal","Values":[12]}
+        ],
+        "3_Count":2,
+        "4_VisName":"M3",
+        "5_Discrip":"大幅度傷害敵人 (20~40) 並治療自身"
+    }
+    
+] 
